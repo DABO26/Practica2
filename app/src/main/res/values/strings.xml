@@ -3,4 +3,7 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="btn_agregar">Agregar</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="btn_buscar">Buscar</string>
 </resources>

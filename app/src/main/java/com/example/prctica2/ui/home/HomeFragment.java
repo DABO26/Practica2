@@ -58,8 +58,11 @@ public class HomeFragment extends Fragment {
     public void agregar() {
         lista_Consola = binding.listaConsolas;
 
-
-
+        if (txt_Nombre.getText().toString().equals("") || txt_Descripcion.getText().toString().equals("")){
+            String mensaje = "Todos los campos son obligatorios.";
+            Toast.makeText(this.getContext(), mensaje, Toast.LENGTH_LONG).show();
+            return;
+        }
 
         listaNombres.add(txt_Nombre.getText().toString());
         listaDescripciones.add(txt_Descripcion.getText().toString());
@@ -67,6 +70,9 @@ public class HomeFragment extends Fragment {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getContext(), R.layout.item_list, listaNombres);
 
         lista_Consola.setAdapter(adapter);
+
+        String mensaje = "Consola agregada.";
+        Toast.makeText(this.getContext(), mensaje, Toast.LENGTH_LONG).show();
 
         final Context context = this.getContext();
         lista_Consola.setOnItemClickListener(new AdapterView.OnItemClickListener() {

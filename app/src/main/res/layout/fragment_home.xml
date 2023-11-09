@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
-        android:text="Agregar"
+        android:text="@string/btn_agregar"
         app:layout_constraintBaseline_toBaselineOf="@+id/txt_descripcion"
         app:layout_constraintStart_toEndOf="@+id/txt_descripcion" />
 
