@@ -38,7 +38,7 @@
         android:layout_marginEnd="1dp"
         android:ems="10"
         android:hint="Edad"
-        android:inputType="text"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="@+id/txt_usuario"
         app:layout_constraintTop_toBottomOf="@+id/txt_usuario" />
 

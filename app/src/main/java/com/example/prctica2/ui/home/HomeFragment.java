@@ -41,7 +41,6 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
 
-
         txt_Nombre = binding.txtNombre;
         txt_Descripcion = binding.txtDescripcion;
 
@@ -58,7 +57,7 @@ public class HomeFragment extends Fragment {
     public void agregar() {
         lista_Consola = binding.listaConsolas;
 
-        if (txt_Nombre.getText().toString().equals("") || txt_Descripcion.getText().toString().equals("")){
+        if (txt_Nombre.getText().toString().equals("") || txt_Descripcion.getText().toString().equals("")) {
             String mensaje = "Todos los campos son obligatorios.";
             Toast.makeText(this.getContext(), mensaje, Toast.LENGTH_LONG).show();
             return;
